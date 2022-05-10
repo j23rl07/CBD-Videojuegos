@@ -1,13 +1,13 @@
-package com.CBD.Videojuegos;
+package com.CBD.videojuego;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VideojuegosApplication {
+public class VideojuegoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VideojuegosApplication.class, args);
+		SpringApplication.run(VideojuegoApplication.class, args);
 	}
 
 }

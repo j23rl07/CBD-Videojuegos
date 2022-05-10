@@ -1,10 +1,10 @@
-package com.CBD.Videojuegos;
+package com.CBD.videojuego;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VideojuegosApplicationTests {
+class VideojuegoApplicationTests {
 
 	@Test
 	void contextLoads() {
