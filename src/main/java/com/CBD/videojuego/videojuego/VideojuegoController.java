@@ -5,6 +5,8 @@
 package com.CBD.videojuego.videojuego;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -14,5 +16,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/videojuegos")
 public class VideojuegoController {
+    
+    private VideojuegoService videojuegoService;
+    
+    @GetMapping()
+    public String FindGenerosPlataforma(Model model){
+        Iterable<GxP> gxp = videojuegoService.GenerosPlataforma();
+        model.addAttribute("generosPlataforma", gxp);
+        
+        return "videojuegos";
+    }
     
 }
